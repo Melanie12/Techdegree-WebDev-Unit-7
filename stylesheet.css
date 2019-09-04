@@ -11,3 +11,7 @@
 header,nav,main{
   border:1px solid;
 }
+
+.alert{
+  background-color: purple;
+}
