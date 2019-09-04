@@ -1,0 +1,13 @@
+.nav-icon {
+  background-color: purple;
+  width: 5%;
+}
+
+.header-icon {
+  background-color: purple;
+  width: 5%;
+}
+
+header,nav,main{
+  border:1px solid;
+}
