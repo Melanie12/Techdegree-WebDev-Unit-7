@@ -8,25 +8,49 @@ header{
   align-items:center;
   width: 100%;
 }
+header h1 {
+  color:white;
+  font-size: 1.5em;
+}
 #profile {
   display:flex;
   width:100%;
 }
-.bell-icon,.victoria {
+.bell-icon {
   width:100%;
   display:flex;
 }
+.header-icon, .notifications{
+  justify-content: flex-end;
+}
+
+.victoria {
+  width:100%;
+  display:flex;
+}
+
+.victoria h3 {
+  align-items: center;
+}
+
+.victoria h3 {
+  color:white;
+  font-weight: 400;
+}
 .bell-icon img {
+  justify-content: flex-end;
+  padding: 10px;
   width:20%;
 }
 
 .victoria img {
+  padding: 10px;
   width:20%;
   border-radius:50%;
 }
 
 /*------------MAIN----------*/
-main {
+main, nav {
   width: 100%;
 }
 /*------------NAV----------*/
@@ -36,11 +60,15 @@ main {
   flex-direction:row;
 }
 
-.nav-icon {
+.nav-icon a {
+
+  align-content: center;
+  justify-content:center;
+}
+
+.nav-icon{
   width: 5%;
   padding: 10px;
-align-content: center;
-  justify-content:center;
 }
 
 header,nav,main{
