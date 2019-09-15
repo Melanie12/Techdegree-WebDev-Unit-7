@@ -8,49 +8,39 @@ header{
   align-items:center;
   width: 100%;
 }
-#profile{
-  display: flex;
+#profile {
+  display:flex;
   width:100%;
-  justify-content: flex-end;
-  align-items:stretch;
 }
-header h1 {
-  justify-content:flex-start;
-  color:white;
-  font-size: 1.17em;
-  margin-left: 10px;
+.bell-icon,.victoria {
+  width:100%;
+  display:flex;
 }
-header h3{
-  font-size: 1em;
-}
-.victoria{
-  display: flex;
-  align-items: center;
-  color:white;
-}
-.victoria img{
-  margin:10px;
-  justify-content:flex-end;
-  align-items: center;
+.bell-icon img {
   width:20%;
-  border-radius: 50%;
-}
-.bell-icon {
-  margin-top: 15px;
-  margin-right:10px;
-  justify-content: : flex-end;
-  align-items: center;
-  background-color: #6d39d2;
-  width:5%;
 }
 
+.victoria img {
+  width:20%;
+  border-radius:50%;
+}
+
+/*------------MAIN----------*/
+main {
+  width: 100%;
+}
 /*------------NAV----------*/
-nav{
+.nav{
   background-color: purple;
+  display:flex;
+  flex-direction:row;
 }
 
 .nav-icon {
   width: 5%;
+  padding: 10px;
+align-content: center;
+  justify-content:center;
 }
 
 header,nav,main{
@@ -80,7 +70,7 @@ main{
 
 .widget-container-full, .widget-container-half {
 width: 95vw;}
-
+/*------------GRID MOBILE----------*/
 @media (min-width:768px){
   .grid-container {
   display:grid;
@@ -88,6 +78,7 @@ width: 95vw;}
   grid-template-areas:
   "header header"
   "navigation main";}
+
   header{
       grid-area:header;}
 
@@ -97,8 +88,8 @@ width: 95vw;}
   main{
       grid-area:main;}
 
-.main {display: grid;}
-.main {grid-template-columns: 50% ;}
+main {display: grid;}
+main {grid-template-columns: 50% ;}
 .traffic, .social {grid-column: 1 / span 2;}
 .daily, .members, .message {grid-column: 1 / span 1;}
 .mobile, .activity, .settings {grid-column: 2 / span 1;}
