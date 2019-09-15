@@ -84,17 +84,17 @@ header,nav,main{
 
 .main-header-search input{
     justify-content:flex-end;
+    border-radius:10px;
 }
 .alert{
+  margin-left: 10px;
   font-family: Raleway;
   padding-top: 3px;
+  padding-left:7px;
   padding-bottom: 3px;
   background-color: purple;
   color:white;
-  border-top-left-radius:20%;
-  border-top-right-radius:20%;
-  border-bottom-left-radius:20%;
-  border-bottom-right-radius:20%;
+  border-radius:10px;
 
 }
 .grid-container {
