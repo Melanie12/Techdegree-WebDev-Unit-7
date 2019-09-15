@@ -125,7 +125,7 @@ margin-left: 10px;
     grid-template-rows: auto;
     grid-template-areas:
       "header"
-      "navigation"
+      "nav"
       "main";
 }
 header{
@@ -146,10 +146,13 @@ width: 95vw;}
   grid-template-columns: 55px 1fr;
   grid-template-areas:
   "header header"
-  "navigation main";}
+  "nav main";}
 
   header{
-      grid-area:header;}
+      grid-area:header;
+    grid-column: 1/-1;
+
+    }
 
   nav{
       grid-area:nav;}
