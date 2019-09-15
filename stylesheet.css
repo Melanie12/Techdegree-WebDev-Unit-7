@@ -60,15 +60,13 @@ main, nav {
   flex-direction:row;
 }
 
-.nav-icon a {
 
-  align-content: center;
-  justify-content:center;
-}
-
-.nav-icon{
+.nav-icon {
   width: 5%;
   padding: 10px;
+  align-content: center;
+  justify-content:center;
+
 }
 
 header,nav,main{
