@@ -9,6 +9,8 @@ header{
   width: 100%;
 }
 header h1 {
+  padding-left: 15px;
+  font-weight: 400;
   color:white;
   font-size: 1.5em;
 }
@@ -19,14 +21,18 @@ header h1 {
 .bell-icon {
   width:100%;
   display:flex;
+  justify-content: flex-end;
 }
 .header-icon, .notifications{
   justify-content: flex-end;
 }
 
 .victoria {
-  width:100%;
+  width:40%;
   display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5px;
 }
 
 .victoria h3 {
@@ -34,17 +40,18 @@ header h1 {
 }
 
 .victoria h3 {
+  font-size: 0.7em;
   color:white;
   font-weight: 400;
 }
 .bell-icon img {
   justify-content: flex-end;
   padding: 10px;
-  width:20%;
+  width:7%;
 }
 
 .victoria img {
-  padding: 10px;
+  padding:5px 5px 5px 5px;
   width:20%;
   border-radius:50%;
 }
@@ -58,15 +65,12 @@ main, nav {
   background-color: purple;
   display:flex;
   flex-direction:row;
+  justify-content: center;
 }
-
 
 .nav-icon {
   width: 5%;
   margin: 10px;
-  align-content: center;
-  justify-content:center;
-
 }
 
 header,nav,main{
@@ -75,13 +79,19 @@ header,nav,main{
 
 .main-header{
   display:flex;
+  align-items: flex-start;
 }
 
 .main-header-search {
   display:flex;
   width:100%;
-  padding-left:20px;
-  padding-top: 10px;
+  height: auto;
+  padding-left:40px;
+  background-color: #bd8bf0;
+  border-bottom-left-radius: 15px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .main-header-search input{
@@ -89,7 +99,11 @@ header,nav,main{
     border-radius:5px;
     height:50%;
     width: 100%;
+    padding-top: 5px;
     padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-left:100px;
 }
 
  h2 {
@@ -104,7 +118,6 @@ margin-left: 10px;
   background-color: purple;
   color:white;
   border-radius:5px;
-
 }
 .grid-container {
     display: grid;
