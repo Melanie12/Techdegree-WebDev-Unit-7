@@ -139,7 +139,7 @@ main{
 
 .widget-container-full, .widget-container-half {
 width: 95vw;}
-/*------------GRID MOBILE----------*/
+/*------------GRID DESKTOP----------*/
 @media (min-width:768px){
   .grid-container {
   display:grid;
