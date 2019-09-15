@@ -63,7 +63,7 @@ main, nav {
 
 .nav-icon {
   width: 5%;
-  padding: 10px;
+  margin: 10px;
   align-content: center;
   justify-content:center;
 
@@ -73,8 +73,29 @@ header,nav,main{
   border:1px solid;
 }
 
+.main-header{
+  display:flex;
+}
+
+.main-header-search {
+  display:flex;
+  width:100%;
+}
+
+.main-header-search input{
+    justify-content:flex-end;
+}
 .alert{
+  font-family: Raleway;
+  padding-top: 3px;
+  padding-bottom: 3px;
   background-color: purple;
+  color:white;
+  border-top-left-radius:20%;
+  border-top-right-radius:20%;
+  border-bottom-left-radius:20%;
+  border-bottom-right-radius:20%;
+
 }
 .grid-container {
     display: grid;
