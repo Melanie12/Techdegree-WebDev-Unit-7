@@ -1,5 +1,6 @@
-header,main {
+body *{
   font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
 }
 
 header{
@@ -72,9 +73,6 @@ main, nav {
   margin: 10px;
 }
 
-header,nav,main{
-  border:1px solid;
-}
 
 .main-header{
   display:flex;
@@ -197,13 +195,61 @@ justify-content: flex-start;
   width:100%;
 }
 
-.members-container >p{
+.members-container a{
+  text-decoration:none;
+  color: #bd8bf0;
+
+}
+
+.members-container p{
   justify-content: flex-end;
 }
 
 hr {
   margin-left: 30px;
   margin-right: 30px;
+}
+/*------------BUTTONS----------*/
+.widget-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family:'Raleway', sans-serif;
+}
+
+.button-primary{
+  text-transform: uppercase;
+  color:white;
+  background-color: #bd8bf0;
+  border-radius: 5px;
+  width: inherit;
+  margin: 10px 10px 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* .switch-ios.switch-light  {
+    width: 20%;
+} */
+.toggle{
+margin: 10px 10px 10px 10px;
+    width: auto;
+}
+.switch-ios.switch-light  {
+  width:auto;
+}
+
+.switch-ios.switch-light span {
+  text-transform: uppercase;
+}
+.form-field{
+  width:auto;
+  margin:10px 10px 10px 10px;
+  padding:10px 10px 10px 10px;
+  background-color: #F0F2F3;
+  border-radius: 5px;
+  color: grey;
 }
 
 /*------------GRID MOBILE----------*/
@@ -231,6 +277,9 @@ width: 95vw;}
 .daily,.mobile,.settings,.members,.message,.activity {
   border:lightgrey solid 1px;
 }
+
+.message {grid-column: 1 / span 1;}
+ .settings {grid-column: 2 / span 1;}
 /*------------GRID DESKTOP----------*/
 @media (min-width:768px){
   .grid-container {
