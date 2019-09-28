@@ -88,6 +88,8 @@ main, nav {
   margin-left: 10px;
   margin-bottom: 20px;
   padding-bottom: 30px;
+  border-left: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
 }
 
 .main-header-search input{
@@ -141,22 +143,23 @@ h3{
 
 
 /*------------SOCIAL MEDIA----------*/
+.members, .activity, .message,.settings, .social, .daily, .mobile {
+  border-top:1px solid lightgrey;
+}
 
 #social-box{
   display: flex;
-  justify-content:space-around;
+  justify-content:space-between;
   width: 100%;
   margin-bottom: 20px;
 }
 .social-container{
-display: flex;
-justify-content: flex-start;
   border: lightgrey solid 1px;
-  padding:10px;
+  padding:20px 0px 20px 35px;
   flex-wrap: nowrap;
   margin-left: 10px;
   margin-right: 10px;
-  width: 1/3;
+  width:inherit;
   border-radius: 5%;
   background-color:#FBFBFB;
 }
@@ -174,6 +177,15 @@ justify-content: flex-start;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 2.5em;
+}
+
+svg{
+  width: 85px;
+  height:85px;
+border-radius: 50%;
+  background-color:#7477BF;
+  padding: 15px;
+  border:0px;
 }
 /*------------MEMBERS----------*/
 .profile-image{
@@ -277,12 +289,10 @@ margin: 10px 10px 10px 10px;
 .widget-container-full, .widget-container-half {
 width: 95vw;}
 
-.daily,.mobile,.settings,.members,.message,.activity {
-  border-bottom:lightgrey solid 1px;
-}
 
 .message {grid-column: 1 / span 1;}
  .settings {grid-column: 2 / span 1;}
+
 /*------------GRID DESKTOP----------*/
 @media (min-width:768px){
   .grid-container {
@@ -318,6 +328,14 @@ width: 95vw;}
 .widget-container-full { width: 90vw;}
 .widget-container-half {width: 45vw;}
 
+.members, .activity, .message,.settings, .social, .daily, .mobile {
+  border-top:1px solid lightgrey;
+}
+.members, .message, .daily{
+  border-right: 1px solid lightgrey;
+}
+
+
 /*------------NAV ICONS----------*/
 .navigation{
   display:flex;
@@ -327,32 +345,27 @@ justify-content: flex-start;
 .nav-icon {
   width: 50%;
 }
-/*------------GRAPH CONTAINERS----------*/
+/*------------SOCIAL CONTAINERS----------*/
 
 #social-box{
   display: flex;
-  justify-content:space-around;
+justify-content: space-between;
+  margin-bottom: 20px;
 }
+
+
 .social-container{
-display: flex;
-justify-content: flex-start;
-  border: lightgrey solid 1px;
-  padding:20px;
+  border: 1px solid lightgrey;
+  padding:20px 0px 20px 35px;
   flex-wrap:nowrap;
-  flex-grow: 1;
-  margin-left: 10px;
-  margin-right: 10px;
-  width: 1/3;
-  border-radius: 5%;
+  width:inherit;
+  border-radius:5px;
   background-color:#FBFBFB;
 }
 .social-text{
   margin-left: 10px;
 }
 
-#social-box{
-  margin-bottom: 20px;
-}
 .social-text p:first-child{
   font-weight: 800;
   font-size: 1.2em;
