@@ -119,6 +119,19 @@ font-weight: 400;
   color:white;
   border-radius:5px;
 }
+/*------------ALERT----------*/
+.alert-banner{
+  display:flex;
+  justify-content: space-between;
+}
+.alert-banner p{
+  margin-left: 10px;
+}
+
+.alert-banner-close{
+  margin-right: 20px;
+  font-weight: 800;
+}
 /*------------TRAFFIC----------*/
 ul{
   list-style: none;
