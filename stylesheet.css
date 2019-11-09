@@ -50,7 +50,7 @@ header h1 {
 }
 
 .header-icon {
-  width:5%;
+  height:28px;
 }
 /*
 
@@ -466,10 +466,13 @@ text-transform: uppercase;
 
 /*------------SEARCH BAR----------*/
 
+.settings{
+  display: flex;
+  flex-direction: column;
+}
 
 .settings-button{
-  padding-top: 10px;
-padding-bottom: 10px;
+  padding-top: 56px;
 }
 
 
