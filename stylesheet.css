@@ -155,9 +155,12 @@ h3{
   border-radius: 50%;
 }
 
+#mobile-chart{
+  padding-bottom: 20px;
+}
 
 /*------------SOCIAL MEDIA----------*/
-.members, .activity, .message,.settings, .social, .daily, .mobile {
+.members, .activity, .message, .settings, .social, .daily, .mobile {
   border-top:1px solid lightgrey;
 }
 
@@ -204,15 +207,26 @@ border-radius: 50%;
 /*------------MEMBERS----------*/
 .profile-image{
 width:45px;
-height: 45px;
+height: auto;
 border-radius: 50%;
 margin-right: 10px;
+}
+
+.members {
+  padding-bottom: 10px;
 }
 
 .members-container{
   margin-left: 10px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
+  align-items: flex-start;
+
+}
+
+.members-text{
+  line-height: normal;
+height: auto;
 }
 
 .members-container a{
@@ -223,7 +237,7 @@ margin-right: 10px;
 .members-container>p{
 margin-left: auto;
 margin-right: 10px;
-padding-top: 10px;
+/* padding-top: 10px; */
 }
 
 hr{
@@ -366,6 +380,11 @@ width: 95vw;}
   border-right: 1px solid lightgrey;
 }
 
+/*------------HEADER----------*/
+
+.header-icon {
+  width:4%;
+}
 
 /*------------NAV ICONS----------*/
 .navigation{
