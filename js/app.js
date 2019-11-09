@@ -7,12 +7,12 @@ alert.innerHTML=
   to complete</p>
   <p class="alert-banner-close">x</p>
 </div>
-`
+`;
 alert.addEventListener('click', e => {
   const element = e.target;
   if (element.classList.contains("alert-banner-close")) {
   alert.style.display = "none"
-  }
+};
 });
 
 /*Chart JS*/
@@ -74,7 +74,7 @@ const dailyOptions = {
 legend : {
   display: false
 }
-}
+};
 let dailyChart = new Chart(dailyCanvas, {
 type: 'bar',
 data: dailyData,
@@ -105,7 +105,7 @@ legend: {
     fontStyle: 'bold'
     }
   }
-}
+};
 
 let mobileChart = new Chart(mobileCanvas, {
   type: 'doughnut',
