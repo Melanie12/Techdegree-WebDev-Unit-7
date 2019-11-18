@@ -49,15 +49,22 @@ header h1 {
   justify-content: flex-end;
 }
 
-.header-icon {
+.bell {
   height:28px;
 }
-/*
 
-.header-icon, .notifications{
-  justify-content: flex-end;
+.bell:hover{
+ transform: rotate(10deg);
 }
- */
+
+.notifications{
+    height: 7px;
+    width: 7px;
+    margin-bottom:12px;
+    background-color:#90EE90;
+    border-radius: 50%;
+}
+
 
 /*------------MAIN----------*/
 main, nav {
@@ -218,16 +225,16 @@ margin-right: 10px;
 }
 
 .members-container{
-  margin-left: 10px;
-  display: flex;
-  /* flex-direction: row; */
-  align-items: flex-start;
-margin-right: auto;
+display:flex;
+align-items: center;
+justify-content: flex-start;
+margin:0 15px;
+padding:15px;
 }
 
-.members-text{
-  line-height: normal;
-height: auto;
+.members-container p{
+margin-top:0px;
+margin-bottom: 0px;
 }
 
 .members-container a{
@@ -235,11 +242,13 @@ height: auto;
   color:#7477BF;
 }
 
-.members-container>p{
-margin-left: auto;
-margin-right: 30px;
-/* padding-top: 10px; */
+.date, .next{
+  margin-left: auto;
+  align-items: center;
+  justify-content: flex-end;
 }
+
+
 
 hr{
   margin-left: 30px;
@@ -430,9 +439,7 @@ justify-content: space-between;
 }
 
 svg{
-  width: 85px;
-  height:85px;
- border-radius: 50%;
+ /* border-radius: 50%; */
   background-color:#7477BF;
   padding: 15px;
   border:0px;
