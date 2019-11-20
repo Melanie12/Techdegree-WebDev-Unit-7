@@ -11,8 +11,8 @@ alert.innerHTML=
 alert.addEventListener('click', e => {
   const element = e.target;
   if (element.classList.contains("alert-banner-close")) {
-  alert.style.display = "none"
-};
+  alert.style.display = "none";
+}
 });
 
 /*Chart JS*/
@@ -114,10 +114,11 @@ let mobileChart = new Chart(mobileCanvas, {
 });
 
 //Messaging section
-const user = document.getElementById("userField");
-const message = document.getElementById("messageField");
-const send = document.getElementById("send");
-send.addEventListener('click', () => {
+const user = document.getElementById('userField');
+const message = document.getElementById('messageField');
+const send = document.getElementById('send');
+
+send.addEventListener('click', e => {
   // ensure user and message fields are filled out
   if (user.value === "" && message.value === "") {
   alert("Please fill out user and message fields before sending");
@@ -126,6 +127,6 @@ send.addEventListener('click', () => {
   } else if (message.value === "" ) {
   alert("Please fill out message field before sending");
   } else {
-  alert(`Message successfully sent to: ${user.value}`);
+  alert("Message successfully sent to: ${user.value}");
 }
 });
