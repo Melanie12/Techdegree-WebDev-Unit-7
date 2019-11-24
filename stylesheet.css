@@ -1,6 +1,10 @@
-body * {
+* {
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
 }
 /*------------HEADER----------*/
 header{
@@ -174,6 +178,7 @@ h3{
 
 #social-box{
   display: flex;
+  flex-wrap: wrap;
   justify-content:space-between;
   width: 100%;
   margin-bottom: 20px;
@@ -187,6 +192,14 @@ h3{
   width:inherit;
   border-radius: 5%;
   background-color:#FBFBFB;
+}
+
+svg{
+  border-radius: 50%;
+  background-color:#7477BF;
+  padding:10px;
+  height: 80px;
+  width: 80px;
 }
 .social-text{
   margin-left: 10px;
@@ -204,14 +217,7 @@ h3{
   font-size: 2.5em;
 }
 
-svg{
-  width: 85px;
-  height:85px;
-border-radius: 50%;
-  background-color:#7477BF;
-  padding: 15px;
-  border:0px;
-}
+
 /*------------MEMBERS----------*/
 .profile-image{
 width:45px;
@@ -342,13 +348,16 @@ width: 15%;
     grid-area:main;}
 
 .widget-container-full, .widget-container-half {
-width: 95vw;}
+width: 90vw;}
 
 
 .message {grid-column: 1 / span 1;}
+.social {grid-column: 1 / span 1;}
 .settings {grid-column: 2 / span 1;}
 
-/*------------GRID DESKTOP----------*/
+
+
+/*------------GRID TABLET----------*/
 @media (min-width:768px){
   .grid-container {
   display:grid;
@@ -409,7 +418,8 @@ justify-content: flex-start;
 
 #social-box{
   display: flex;
-justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -438,12 +448,6 @@ justify-content: space-between;
   font-size: 3em;
 }
 
-svg{
- /* border-radius: 50%; */
-  background-color:#7477BF;
-  padding: 15px;
-  border:0px;
-}
 
 .members-container{
   margin-left: 10px;
@@ -481,6 +485,10 @@ text-transform: uppercase;
 .settings-button{
   padding-top: 56px;
 }
-
-
 }
+
+/*------------GRID DESKTOP----------*/
+
+ @media (max-width: 767px) {
+
+ }
