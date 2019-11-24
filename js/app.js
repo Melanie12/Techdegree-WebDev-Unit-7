@@ -1,6 +1,6 @@
 /*Alert banner*/
-const alert=document.getElementById("alert");
-alert.innerHTML=
+const notifications=document.getElementById("alert");
+notifications.innerHTML=
 `
 <div class="alert-banner">
   <p><strong>Alert:</strong> You have <strong>6</strong> overdue tasks
@@ -8,10 +8,10 @@ alert.innerHTML=
   <p class="alert-banner-close">x</p>
 </div>
 `;
-alert.addEventListener('click', e => {
+notifications.addEventListener('click', e => {
   const element = e.target;
   if (element.classList.contains("alert-banner-close")) {
-  alert.style.display = "none";
+  notifications.style.display = "none";
 }
 });
 
@@ -119,13 +119,13 @@ const user = document.getElementById('userField');
   const send = document.getElementById('send');
 
   send.addEventListener('click', (e) => {
-      if (user.value && message.value === ""){
-          alert("Please fill out user and message fields before sending");
-      } else if (user.value === ""){
-          alert("Please fill out message field before sending");
-      } else if (message.value === ""){
-          alert("Please fill out user field before sending");
-      } else {
-          alert("Message sent to $(user.value)");
-      }
-  });
+    if (user.value === "" && message.value === "") {
+    alert("Please fill out user and message fields before sending");
+    } else if (user.value === "" ) {
+    alert("Please fill out user field before sending");
+    } else if (message.value === "" ) {
+    alert("Please fill out message field before sending");
+    } else {
+    alert(`Message successfully sent to: ${user.value}`);
+    }
+    });
